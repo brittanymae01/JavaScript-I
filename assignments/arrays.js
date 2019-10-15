@@ -77,9 +77,7 @@ let inventory = [
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 const carValues = Object.values(inventory);
 
-console.log('Car 33 is a', (carValues[32].car_year), (carValues[32].car_make),
-  (carValues[32].car_model));
-
+console.log(`Car 33 is a ${carValues[32].car_year} ${carValues[32].car_make} ${carValues[32].car_model}`);
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
@@ -89,7 +87,7 @@ for (let i = 0; i < inventory.length; i++) {
   };
 }
 
-console.log((lastCar.car_make), (lastCar.car_model));
+console.log(`${lastCar.car_make} ${lastCar.car_model}`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
